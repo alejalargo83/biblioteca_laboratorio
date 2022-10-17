@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Se importa la configuracion de la bd
 import db
-from app.config import config
+from config import config
 # Se importan los modelos
 # Se importan todas las rutas
 from user import endpoint as user_endpoint
@@ -37,6 +37,6 @@ app.include_router(user_endpoint.router, prefix="/v1/user", tags=["users"])
 
 
 if __name__ == "__main__":
-    # db.Base.metadata.create_all(db.conn)
+    db.Base.metadata.create_all(db.conn)
     uvicorn_arg = config.get("allowed_args_for_uvicorn")
     uvicorn.run(app="main:app", **uvicorn_arg)
