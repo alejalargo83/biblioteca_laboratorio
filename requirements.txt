@@ -1,0 +1,8 @@
+fastapi==0.63.0 # El framework de endpoints
+uvicorn==0.13.4 # El gestor servidor
+SQLAlchemy==1.4.27 # El ORM que permite integración de la db
+PyYAML==5.3.1 # Sirve para controlar los archivos de configuración
+
+## PARA INSTALAR LOS REQUERIMIENTOS:
+## pip install -r requirements.txt
+## pip3 install -r requirements.txt

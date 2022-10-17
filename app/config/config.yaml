@@ -1,0 +1,13 @@
+# database: postgresql://usuario:contraseña@servicio_db/db
+database: postgresql://lab:lab123@34.122.116.211:5432/lab
+
+# orgienes permitidos
+origins:
+  - http://localhost
+  - http://localhost:8080
+
+# uvicorn arguments
+allowed_args_for_uvicorn:
+  host: "0.0.0.0" # localhost
+  port: 8000 # puerto de salida
+  reload: true # si permite recargas
