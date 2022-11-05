@@ -1,5 +1,5 @@
 import db
-from sqlalchemy import Boolean, Column, Date, Integer, String
+from sqlalchemy import Column, Date, Integer, String
 
 
 class Order(db.Base):
